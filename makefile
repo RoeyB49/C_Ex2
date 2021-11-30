@@ -10,7 +10,7 @@ my_mat.o: my_mat.c my_mat.h
 main.o: main.c my_mat.o 
 	$(CC) $(FLAGS) -c main.c
 	
-connections: main.o my_mat.h my_mat.c
+connections: main.o 
 	$(CC) $(FLAGS) main.o my_mat.c -lm -o connections
 	
 .PHONY: clean all
