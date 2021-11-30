@@ -17,6 +17,6 @@ if(input=='C'){
 C();
 }
 }
-return 1;
+
 }
 
