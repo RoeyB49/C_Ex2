@@ -11,7 +11,7 @@ main.o: main.c my_mat.o
 	$(CC) $(FLAGS) -c main.c
 	
 connections: main.o my_mat.o
-	$(CC) $(FLAGS) main.o -lm -o connections
+	$(CC) $(FLAGS) main.o my_mat.o -lm -o connections
 	
 .PHONY: clean all
 
